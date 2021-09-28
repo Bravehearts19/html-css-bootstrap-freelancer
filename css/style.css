@@ -9,12 +9,30 @@
 }
 
 .line_white::before,
-.line_white::after {
+.line_white::after,
+.line_black::before,
+.line_black::after {
     content: "";
     display: inline-block;
     height: 2px;
     background-color: white;
     border-radius: 1px;
-    width: 10%;
+    width: 12%;
     transform: translateY(-200%);
+}
+
+.line_black::before,
+.line_black::after {
+    background-color: black;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-success:hover {
+    color: rgb(26 ,188, 156);
+    background-color: white;
+    border-color: white;
 }
