@@ -3,10 +3,14 @@
     --bs-success-rgb: 26 ,188, 156;
 }
 
-.nav_link_font {
-    font-size: 10px;
+.nav_link {
+    font-size: 11px;
     font-weight: 500;
 }
+
+.nav_link:hover {
+    text-decoration: underline;
+} /* Non funziona */
 
 .line_white::before,
 .line_white::after,
@@ -35,4 +39,58 @@
     color: rgb(26 ,188, 156);
     background-color: white;
     border-color: white;
+}
+
+.form-floating>.height_150_px {
+    height: 150px;
+}
+
+.btn-success {
+    color: white;
+    background-color: rgb(26 ,188, 156);
+    border-color: rgb(26 ,188, 156);
+}
+
+.btn-success:hover {
+    background-color: rgb(17, 153, 126);
+    border-color: rgb(17, 153, 126);
+}
+
+.square {
+    height: 32px;
+    width: 32px;
+    border: 1px solid white;
+    text-align: center;
+    display: inline-block;
+}
+
+.link_icon {
+    color: white;
+    padding: 8px;
+    line-height: 32px;
+} 
+
+.link_icon:hover {
+    color: rgb(26 ,188, 156);
+} 
+
+.square:hover {
+    border: 1px solid rgb(26 ,188, 156);
+}
+
+.link_text {
+    color: rgb(26 ,188, 156);
+    text-decoration: none;
+}
+
+.link_text:hover {
+    color: rgb(17, 153, 126);
+}
+
+.bg_copyright {
+    background-color: rgb(34, 49, 63);
+}
+
+.font_size_small {
+    font-size: 10px;
 }
