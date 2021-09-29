@@ -23,6 +23,10 @@
                     </div>
 
                     <div class="right_section ms-auto">
+                        <div class="nav_hamburger_menu_container d-sm-none">
+                            <a class="nav_hamburger_menu_button" href="#"><i class="fas fa-bars"></i></a>
+                        </div>
+
                         <ul class="list-inline mb-0 d-none d-sm-block">
                             <li class="list-inline-item"><a class="text-decoration-none link-light text-uppercase p-1 nav_link" href="#Portfolio">Portfolio</a></li>
                             <li class="list-inline-item"><a class="text-decoration-none link-light text-uppercase p-1 nav_link" href="#About">About</a></li>
@@ -53,28 +57,58 @@
                     <p class="line_black text-center"><i class="fas fa-star px-3"></i></p>
 
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
-                        <div class="col">
+                        <div class="col card_image">
                             <img class="w-100 rounded-3" src="img/cabin.png" alt="Cabin">
+
+                            <section class="card_image_overlay_text">
+                                <h4>Qualche titolo per la section</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse repudiandae quis saepe quam harum nihil hic? Ipsam aspernatur iste doloribus omnis, maxime architecto adipisci, eligendi totam amet minima cumque?</p>
+                            </section>
                         </div>
                         
-                        <div class="col">
+                        <div class="col card_image">
                             <img class="w-100 rounded-3" src="img/cake.png" alt="Cake">
+                        
+                            <section class="card_image_overlay_text">
+                                <h4>Qualche titolo per la section</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse repudiandae quis saepe quam harum nihil hic? Ipsam aspernatur iste doloribus omnis, maxime architecto adipisci, eligendi totam amet minima cumque?</p>
+                            </section>
                         </div>
                             
-                        <div class="col">
+                        <div class="col card_image">
                             <img class="w-100 rounded-3" src="img/circus.png" alt="Circus">
+                        
+                            <section class="card_image_overlay_text">
+                                <h4>Qualche titolo per la section</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse repudiandae quis saepe quam harum nihil hic? Ipsam aspernatur iste doloribus omnis, maxime architecto adipisci, eligendi totam amet minima cumque?</p>
+                            </section>
                         </div>
                             
-                        <div class="col">
+                        <div class="col card_image">
                             <img class="w-100 rounded-3" src="img/game.png" alt="Game">
+                        
+                            <section class="card_image_overlay_text">
+                                <h4>Qualche titolo per la section</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse repudiandae quis saepe quam harum nihil hic? Ipsam aspernatur iste doloribus omnis, maxime architecto adipisci, eligendi totam amet minima cumque?</p>
+                            </section>
                         </div>
 
-                        <div class="col">
+                        <div class="col card_image">
                             <img class="w-100 rounded-3" src="img/safe.png" alt="Safe">
+                        
+                            <section class="card_image_overlay_text">
+                                <h4>Qualche titolo per la section</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse repudiandae quis saepe quam harum nihil hic? Ipsam aspernatur iste doloribus omnis, maxime architecto adipisci, eligendi totam amet minima cumque?</p>
+                            </section>
                         </div>
 
-                        <div class="col">
+                        <div class="col card_image">
                             <img class="w-100 rounded-3" src="img/submarine.png" alt="submarine">
+                        
+                            <section class="card_image_overlay_text">
+                                <h4>Qualche titolo per la section</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse repudiandae quis saepe quam harum nihil hic? Ipsam aspernatur iste doloribus omnis, maxime architecto adipisci, eligendi totam amet minima cumque?</p>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -111,17 +145,17 @@
                     <div class="row justify-content-center">
                         <form class="col-10">
                             <div class="form-floating">
-                                <input class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your name" id="floatingTextareaName"></input>
+                                <input type="text" class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your name" id="floatingTextareaName"></input>
                                 <label for="floatingTextareaName">Name</label>
                             </div>
 
                             <div class="form-floating">
-                                <input class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your email address" id="floatingTextareaEmail"></input>
+                                <input type="email" class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your email address" id="floatingTextareaEmail"></input>
                                 <label for="floatingTextareaEmail">Email Address</label>
                             </div>
 
                             <div class="form-floating">
-                                <input class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your phone number" id="floatingTextareaNumber"></input>
+                                <input type="tel" class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your phone number" id="floatingTextareaNumber"></input>
                                 <label for="floatingTextareaNumber">Phone Number</label>
                             </div>
 
@@ -151,21 +185,21 @@
 
                         <div class="col-12 col-md-4">
                             <h5 class="text-uppercase">Around the web</h5>
-
-                            <div class="square rounded-circle">
-                                <a class="link_icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                            
+                            <div id="facebook_square" class="square rounded-circle">
+                                <a id="facebook" class="link_icon" href="#"><i class="fab fa-facebook-f"></i></a>
                             </div>
 
-                            <div class="square rounded-circle">
-                                <a class="link_icon" href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <div id="google_square" class="square rounded-circle">
+                                <a id="google" class="link_icon" href="#"><i class="fab fa-google-plus-g"></i></a>
                             </div>
 
-                            <div class="square rounded-circle">
-                                <a class="link_icon" href="#"><i class="fab fa-twitter"></i></a>
+                            <div id="twitter_square" class="square rounded-circle">
+                                <a id="twitter" class="link_icon" href="#"><i class="fab fa-twitter"></i></a>
                             </div>
 
-                            <div class="square rounded-circle">
-                                <a class="link_icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <div id="linkedin_square" class="square rounded-circle">
+                                <a id="linkedin" class="link_icon" href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
 

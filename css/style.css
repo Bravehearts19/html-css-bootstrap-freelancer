@@ -16,6 +16,27 @@ body {
     text-decoration: underline !important;
 } 
 
+.nav_hamburger_menu_container {
+    padding: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
+
+.nav_hamburger_menu_button {
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+}
+
+/* .nav_hamburger_menu_button:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+.nav_hamburger_menu_button:hover .nav_hamburger_menu_button i {
+    font-size: 18px;
+} */
+
 .line_white::before,
 .line_white::after,
 .line_black::before,
@@ -32,6 +53,39 @@ body {
 .line_black::before,
 .line_black::after {
     background-color: black;
+}
+
+.card_image {
+    position: relative;
+}
+
+.card_image:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    right: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.card_image_overlay_text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+    width: 70%;
+    text-align: center;
+    color: white;
+    z-index: 3;
+}
+
+.card_image:hover .card_image_overlay_text {
+    display: block;
 }
 
 .btn-outline-success {
@@ -64,22 +118,57 @@ body {
     height: 32px;
     width: 32px;
     border: 1px solid white;
-    text-align: center;
+    position: relative;
     display: inline-block;
 }
 
 .link_icon {
     color: white;
     padding: 8px;
-    line-height: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 } 
 
-.link_icon:hover {
+/* .link_icon:hover {
     color: rgb(26 ,188, 156);
 } 
 
 .square:hover {
     border: 1px solid rgb(26 ,188, 156);
+} */
+
+#facebook:hover {
+    color: white;
+} 
+
+#facebook_square:hover {
+    border: 1px solid #1d4594;
+}
+
+#google:hover {
+    color: #e34133;
+} 
+
+#google_square:hover {
+    border: 1px solid white;
+}
+
+#twitter:hover {
+    color: #009ded;
+} 
+
+#twitter_square:hover {
+    border: 1px solid #009ded;
+}
+
+#linkedin:hover {
+    color: #0076b3;
+} 
+
+#linkedin_square:hover {
+    border: 1px solid #0076b3;
 }
 
 .link_text {
