@@ -28,14 +28,9 @@ body {
     padding: 3px 6px;
 }
 
-/* .nav_hamburger_menu_button:hover {
-    transform: scale(1.2);
+.nav_hamburger_menu_button:hover {
     color: white;
 }
-
-.nav_hamburger_menu_button:hover .nav_hamburger_menu_button i {
-    font-size: 18px;
-} */
 
 .line_white::before,
 .line_white::after,
