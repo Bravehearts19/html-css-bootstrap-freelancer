@@ -15,7 +15,7 @@
 
     <body>
         <!-- Inizio header -->
-        <header>
+        <header class="sticky-top">
             <nav class="bg-dark text-white py-3">
                 <div class="container d-flex align-items-center">
                     <div class="left_section fw-bold text-uppercase">
@@ -24,9 +24,9 @@
 
                     <div class="right_section ms-auto">
                         <ul class="list-inline mb-0 d-none d-sm-block">
-                            <li class="list-inline-item"><a class="text-decoration-none link-light text-uppercase p-1 nav_link" href="#">Portfolio</a></li>
-                            <li class="list-inline-item"><a class="text-decoration-none link-light text-uppercase p-1 nav_link" href="#">About</a></li>
-                            <li class="list-inline-item"><a class="text-decoration-none link-light text-uppercase p-1 nav_link" href="#">Contact</a></li>
+                            <li class="list-inline-item"><a class="text-decoration-none link-light text-uppercase p-1 nav_link" href="#Portfolio">Portfolio</a></li>
+                            <li class="list-inline-item"><a class="text-decoration-none link-light text-uppercase p-1 nav_link" href="#About">About</a></li>
+                            <li class="list-inline-item"><a class="text-decoration-none link-light text-uppercase p-1 nav_link" href="#Contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
 
         <!-- Inizio main -->
         <main>
-            <section class="bg-success text-white py-3">
+            <div class="bg-success text-white py-3">
                 <div class="container text-center">
                     <img class="mb-4 w-25" src="img/avatar.svg" alt="Immagine avatar">
                     
@@ -44,15 +44,15 @@
                     <p class="line_white"><i class="fas fa-star px-3"></i></p>
                     <p class="text-uppercase">Graphic artist - web designer - illustrator</p>
                 </div>
-            </section>
+            </div>
 
-            <section class="py-5">
+            <div id="Portfolio" class="py-5">
                 <div class="container">
                     <h2 class="text-center text-uppercase fw-bold">Portfolio</h2>
 
                     <p class="line_black text-center"><i class="fas fa-star px-3"></i></p>
 
-                    <div class="row row-cols-3 gy-3">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
                         <div class="col">
                             <img class="w-100 rounded-3" src="img/cabin.png" alt="Cabin">
                         </div>
@@ -78,21 +78,21 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="bg-success text-white py-5">
+            <div id="About" class="bg-success text-white py-5">
                 <div class="container text-center">
                     <h2 class="text-uppercase fw-bold">About</h2>
                 
                     <p class="line_white"><i class="fas fa-star px-3"></i></p>
 
-                    <div class="row">
-                        <div class="col-5 offset-1">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusamus corrupti iusto, excepturi distinctio deserunt, consectetur blanditiis libero quam alias non dolores. Beatae explicabo at harum eligendi quasi, quis alias!</p>
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-md-5">
+                            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusamus corrupti iusto, excepturi distinctio deserunt, consectetur blanditiis libero quam alias non dolores. Beatae explicabo at harum eligendi quasi, quis alias!</p>
                         </div>
                         
-                        <div class="col-5">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quasi aspernatur numquam aperiam expedita iure repellat nihil voluptatum? Sequi recusandae et, magnam a eos odit laudantium numquam officiis distinctio voluptatum!</p>
+                        <div class="col-10 col-md-5">
+                            <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quasi aspernatur numquam aperiam expedita iure repellat nihil voluptatum? Sequi recusandae et, magnam a eos odit laudantium numquam officiis distinctio voluptatum!</p>
                         </div>
                     </div>
 
@@ -100,28 +100,28 @@
                         <i class="fas fa-download"></i> Download
                     </button>
                 </div>
-            </section>
+            </div>
 
-            <section class="py-5">
+            <div id="Contact" class="py-5">
                 <div class="container">
                     <h2 class="text-center text-uppercase fw-bold">Contact me</h2>
 
                     <p class="line_black text-center"><i class="fas fa-star px-3"></i></p>
 
-                    <div class="row">
-                        <div class="col-10 offset-1">
+                    <div class="row justify-content-center">
+                        <form class="col-10">
                             <div class="form-floating">
-                                <textarea class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your name" id="floatingTextareaName"></textarea>
+                                <input class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your name" id="floatingTextareaName"></input>
                                 <label for="floatingTextareaName">Name</label>
                             </div>
 
                             <div class="form-floating">
-                                <textarea class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your email address" id="floatingTextareaEmail"></textarea>
+                                <input class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your email address" id="floatingTextareaEmail"></input>
                                 <label for="floatingTextareaEmail">Email Address</label>
                             </div>
 
                             <div class="form-floating">
-                                <textarea class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your phone number" id="floatingTextareaNumber"></textarea>
+                                <input class="form-control border-end-0 border-start-0 border-top-0 rounded-0" placeholder="Write here your phone number" id="floatingTextareaNumber"></input>
                                 <label for="floatingTextareaNumber">Phone Number</label>
                             </div>
 
@@ -130,12 +130,11 @@
                                 <label for="floatingTextareaMessage">Message</label>
                             </div>
 
-
                             <button class="btn btn-success">Send</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
         <!-- Fine main -->
 
@@ -143,26 +142,16 @@
         <footer>
             <div class="bg-dark text-white py-3">
                 <div class="container py-4 text-center">
-                    <div class="row mb-1">
-                        <div class="col-3">
+                    <div class="row justify-content-center mb-1 gy-3">
+                        <div class="col-12 col-md-4">
                             <h5 class="text-uppercase">location</h5>
-                        </div>
 
-                        <div class="col-3 offset-1">
-                            <h5 class="text-uppercase">Around the web</h5>
-                        </div>
-
-                        <div class="col-3 offset-1">
-                            <h5 class="text-uppercase">About freelancer</h5>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-3">
                             <p class="mb-0">2215 John Daniel Drive Clark, MO<br>54243</p>
                         </div>
 
-                        <div class="col-3 offset-1">
+                        <div class="col-12 col-md-4">
+                            <h5 class="text-uppercase">Around the web</h5>
+
                             <div class="square rounded-circle">
                                 <a class="link_icon" href="#"><i class="fab fa-facebook-f"></i></a>
                             </div>
@@ -180,7 +169,9 @@
                             </div>
                         </div>
 
-                        <div class="col-3 offset-1">
+                        <div class="col-12 col-md-4">
+                            <h5 class="text-uppercase">About freelancer</h5>
+
                             <p class="mb-0">
                                 Freelance is free to use, open source Bootstrap theme created by <a class="link_text" href="#">Start Bootstrap</a>
                             </p>
